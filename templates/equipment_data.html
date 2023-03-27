@@ -1,0 +1,302 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+{% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> {% endcomment %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
+
+{% endblock stylesheets %}
+
+{% block content %}
+                
+    <main class="content">
+
+       
+
+        <div class="preloader bg-soft flex-column justify-content-center align-items-center">
+            <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/icons/nlng.png" height="60" alt="Volt logo">
+        </div>
+
+        
+
+        <div id="card-transform-id" class=" mb-4 padd-page-3">
+           
+            <div class="card-body card-transform">
+                <div class="col-md-12">
+               
+                    
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table
+                              style="width: 100%"
+                              id="multi-filter-select"
+                              class="display nowrap table table-striped table-hover"
+                            >
+                            <h1 class="btn btn-primary header-1 mb-4" type="button">Equipment Data Summary</h1>
+                           
+                              <thead class="thead-style">
+                                <tr class="row-header">
+                                  <th class="row-header">LOCATION</th>
+                                  <th class="row-header">TAG NUMBER</th>
+                                  <th class="row-header">PACER DESCRIPTION</th>
+                                  <th class="row-header">DESCRIPTION</th>
+                                  <th class="row-header">RATING</th>
+                                  <th class="row-header">MANUFACTURER</th>
+                                  <th class="row-header">FRAME SIZE/ SERIAL NO / MODEL NO</th>
+                                  <th class="row-header">NUMBER OF OEM SOURCES</th>
+                                  <th class="row-header">STOCK AVAILABLE VS CONSUMPTION RATE</th>
+                                  <th class="row-header">YEAR OF MANUFACTURE</th>
+                                  <th class="row-header">YEAR IN OPERATION</th>
+                                  <th class="row-header">DESIGN END OF LIFE YEARS</th>
+                                  <th class="row-header">YEAR TO DESIGN END OF LIFE</th>
+                                  <th class="row-header">CURRENT STATUS</th>
+                                  <th class="row-header">PROBABILITY</th>
+                                  <th class="row-header">OPERATIONAL IMPACT CRITICALITY</th>
+                                  <th class="row-header">POTENTIAL RISK ON OOS (ASSET/PRODUCTION)</th>
+                                  <th class="row-header">OBSOLESCENCE RISK</th>
+                                  <th class="row-header">REASON</th>
+                                  <th class="row-header">RECOMMENDED OBSOLESCENCE STRATEGY</th>
+                                  <th class="row-header">RECOMMENDED LIFE EXTENSION STRATEGY</th>
+                                  <th class="row-header">ACTION OWNER (SME)</th>
+                                  <th class="row-header">EQUIPMENT TYPE</th>
+                                </tr>
+                              </thead>
+                              <tfoot>
+                                <tr>
+                                    <td class="row-header">LOCATION</td>
+                                    <td class="row-header">TAG NUMBER</td>
+                                    <td class="row-header">PACER DESCRIPTION</td>
+                                    <td class="row-header">DESCRIPTION</td>
+                                    <td class="row-header">RATING</td>
+                                    <td class="row-header">MANUFACTURER</td>
+                                    <td class="row-header">FRAME SIZE/ SERIAL NO / MODEL NO</td>
+                                    <td class="row-header">NUMBER OF OEM SOURCES</td>
+                                    <td class="row-header">STOCK AVAILABLE VS CONSUMPTION RATE</td>
+                                    <td class="row-header">YEAR OF MANUFACTURE</td>
+                                    <td class="row-header">YEAR IN OPERATION</td>
+                                    <td class="row-header">DESIGN END OF LIFE YEARS</td>
+                                    <td class="row-header">YEAR TO DESIGN END OF LIFE</td>
+                                    <td class="row-header">CURRENT STATUS</td>
+                                    <td class="row-header">PROBABILITY</td>
+                                    <td class="row-header">OPERATIONAL IMPACT CRITICALITY</td>
+                                    <td class="row-header">POTENTIAL RISK ON OOS (ASSET/PRODUCTION)</td>
+                                    <td class="row-header">OBSOLESCENCE RISK</td>
+                                    <td class="row-header">REASON</td>
+                                    <td class="row-header">RECOMMENDED OBSOLESCENCE STRATEGY</td>
+                                    <td class="row-header">RECOMMENDED LIFE EXTENSION STRATEGY</td>
+                                    <td class="row-header">ACTION OWNER (SME)</td>
+                                    <td class="row-header">EQUIPMENT TYPE</td>
+                                </tr>
+                              </tfoot>
+                              <tbody class="text-dark" style="width: 100%">
+                                <tr>
+                                    <td>AREA A-GTG</td>
+                                    <td>G-4001</td>
+                                    <td>TURBO GENERATOR PACKAGE</td>
+                                    <td>Generator(Alternator)</td>
+                                    <td>33.19MW, 11.5KV</td>
+                                    <td>GE</td>
+                                    <td>446X051</td>
+                                    <td>1</td>
+                                    <td>L</td>
+                                    <td>1997</td>
+                                    <td>1998</td>
+                                    <td>25</td>
+                                    <td>End_of_Life</td>
+                                    <td>ACTIVE</td>
+                                    <td>L</td>
+                                    <td>PC</td>
+                                    <td>4C</td>
+                                    <td>M</td>
+                                    <td>NR</td>
+                                    <td>Replace(Alternative)/Retrofit,  Partenership agreements with OEM</td>
+                                    <td>Proactive Technical Monitoring. Refurbishment -Time Based Mtce.Condition Assessment of Internal Parts</td>
+                                    <td>PEE/11&PEE/5</td>
+                                    <td>GENERATOR</td>
+                                </tr>
+
+                                <tr>
+                                    <td>AREA A-GTG</td>
+                                    <td>4-KM-4003A</td>
+                                    <td>MOTOR FOR COOLING WATER FAN</td>
+                                    <td>Main/Auxiliary Air Water Cooler Fan Motor A</td>
+                                    <td>18.75KW(25HP),400V,1475RPM</td>
+                                    <td>GE</td>
+                                    <td>284T</td>
+                                    <td>5</td>
+                                    <td>L</td>
+                                    <td>1996</td>
+                                    <td>1998</td>
+                                    <td>20</td>
+                                    <td>End_of_Life</td>
+                                    <td>ACTIVE</td>
+                                    <td>M</td>
+                                    <td>NON(L)</td>
+                                    <td>1E</td>
+                                    <td>M</td>
+                                    <td>NR</td>
+                                    <td>Replace(Alternative)</td>
+                                    <td>Refurbishment -Time Based Mtce.Review frenquency of  PMRs as per Failure Mode and Mtce Inspection </td>
+                                    <td>PMA ELEC/PEE 5</td>
+                                    <td>ELECTRIC MOTORS</td>
+                                </tr>
+
+                                <tr>
+                                    <td>AREA A-GTG</td>
+                                    <td>G-4002</td>
+                                    <td>TURBO GENERATOR PACKAGE</td>
+                                    <td>Generator(Alternator)</td>
+                                    <td>33.19MW, 11.5KV</td>
+                                    <td>GE</td>
+                                    <td>446X051</td>
+                                    <td>1</td>
+                                    <td>L</td>
+                                    <td>1997</td>
+                                    <td>1998</td>
+                                    <td>25</td>
+                                    <td>End_of_Life</td>
+                                    <td>ACTIVE</td>
+                                    <td>L</td>
+                                    <td>PC</td>
+                                    <td>4C</td>
+                                    <td>M</td>
+                                    <td>NR</td>
+                                    <td>Replace(Alternative)/Retrofit,  Partenership agreements with OEM</td>
+                                    <td>Proactive Technical Monitoring. Refurbishment -Time Based Mtce.Condition Assessment of Internal Parts</td>
+                                    <td>PEE/11&PEE/5</td>
+                                    <td>GENERATOR</td>
+                                </tr>
+
+                                <tr>
+                                    <td>AREA A-GTG</td>
+                                    <td>G-4001</td>
+                                    <td>TURBO GENERATOR PACKAGE</td>
+                                    <td>Generator(Alternator)</td>
+                                    <td>33.19MW, 11.5KV</td>
+                                    <td>GE</td>
+                                    <td>446X051</td>
+                                    <td>1</td>
+                                    <td>L</td>
+                                    <td>1997</td>
+                                    <td>1998</td>
+                                    <td>25</td>
+                                    <td>End_of_Life</td>
+                                    <td>ACTIVE</td>
+                                    <td>L</td>
+                                    <td>PC</td>
+                                    <td>4C</td>
+                                    <td>M</td>
+                                    <td>NR</td>
+                                    <td>Replace(Alternative)/Retrofit,  Partenership agreements with OEM</td>
+                                    <td>Proactive Technical Monitoring. Refurbishment -Time Based Mtce.Condition Assessment of Internal Parts</td>
+                                    <td>PEE/11&PEE/5</td>
+                                    <td>GENERATOR</td>
+                                </tr>
+
+                                <tr>
+                                    <td>AREA A-GTG</td>
+                                    <td>G-4001</td>
+                                    <td>TURBO GENERATOR PACKAGE</td>
+                                    <td>Generator(Alternator)</td>
+                                    <td>33.19MW, 11.5KV</td>
+                                    <td>GE</td>
+                                    <td>446X051</td>
+                                    <td>1</td>
+                                    <td>L</td>
+                                    <td>1997</td>
+                                    <td>1998</td>
+                                    <td>25</td>
+                                    <td>End_of_Life</td>
+                                    <td>ACTIVE</td>
+                                    <td>L</td>
+                                    <td>PC</td>
+                                    <td>4C</td>
+                                    <td>M</td>
+                                    <td>NR</td>
+                                    <td>Replace(Alternative)/Retrofit,  Partenership agreements with OEM</td>
+                                    <td>Proactive Technical Monitoring. Refurbishment -Time Based Mtce.Condition Assessment of Internal Parts</td>
+                                    <td>PEE/11&PEE/5</td>
+                                    <td>GENERATOR</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                            
+                         
+                        </div>
+                    </div>
+                    </div>
+                  
+                 
+
+                  
+                
+            </div>
+        </div>
+
+        {% include 'includes/footer.html' %}
+
+    </main>
+                                    
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<!-- CSS Just for demo purpose, don't include it in your project -->
+
+<!-- Datatables -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script >
+    $(document).ready(function() {
+        $('#basic-datatables').DataTable({
+        });
+
+        $('#multi-filter-select').DataTable( {
+            "pageLength": 5,
+            initComplete: function () {
+                this.api().columns().every( function () {
+                    var column = this;
+                    var select = $('<select class="form-control"><option value=""></option></select>')
+                    .appendTo( $(column.footer()).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                            );
+
+                        column
+                        .search( val ? '^'+val+'$' : '', true, false )
+                        .draw();
+                    } );
+
+                    column.data().unique().sort().each( function ( d, j ) {
+                        select.append( '<option value="'+d+'">'+d+'</option>' )
+                    } );
+                } );
+            }
+        });
+
+        // Add Row
+        $('#add-row').DataTable({
+            "pageLength": 5,
+        });
+
+        var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+        $('#addRowButton').click(function() {
+            $('#add-row').dataTable().fnAddData([
+                $("#addName").val(),
+                $("#addPosition").val(),
+                $("#addOffice").val(),
+                action
+                ]);
+            $('#addRowModal').modal('hide');
+
+        });
+    });
+</script>
+{% endblock javascripts %}
