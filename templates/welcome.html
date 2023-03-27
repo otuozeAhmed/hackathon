@@ -1,0 +1,43 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Lock {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} bg-soft {% endblock body_class %}
+
+{% block content %}
+
+    <main>
+        <!-- Section -->
+
+        <div class="preloader bg-soft flex-column justify-content-center align-items-center">
+            <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/icons/nlng.png" height="60" alt="Volt logo">
+        </div>
+        <section class="vh-lg-100 bg-soft d-flex align-items-center">
+           
+            <div class="container">
+                
+                <div id="card-transform-ids" class="row justify-content-center">
+                    <div class="btn btn-primary text-light header-style shadow-lg">
+                        Equipment Obsolescence Management System
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-center ">
+                        
+                        <img class="card-transform" src="/static/assets/img/cover-3.jpg" />
+                        <img class="card-transform" src="/static/assets/img/cover-6.jpg" />
+                    
+                    </div>
+                    <div class="btn btn-primary text-light">
+                        Click here to continue...
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

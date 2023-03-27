@@ -1,0 +1,145 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main class="content">
+
+
+        <div class="preloader bg-soft flex-column justify-content-center align-items-center">
+            <img class="loader-element animate__animated animate__jackInTheBox" src="/static/assets/img/icons/nlng.png" height="60" alt="Volt logo">
+        </div>
+
+
+        <div id="card-transform-id" class="row justify-content-md-center padd-page">
+            
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension ">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-a.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Area A</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-b.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Area B</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-c.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Area C</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-d.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Area D</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-e.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Area E</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                <div class="card border-light shadow-lg card-dimension">
+                    <div class="card-body card-transform">
+                        <div class="row d-block d-xl-flex align-items-center">
+                            <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
+                                <div class="rounded mr-4 mr-sm-0"><span><img class="image-size" src="/static/assets/img/icons/png-off.png"/></span></div>
+                                
+                            </div>
+                            <div class="col-12 col-xl-7 px-xl-0">
+                                
+                                <div class="ml-4 pl-4">
+                                    <h3 class="area-transform">Offplot</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+       
+
+        {% include 'includes/footer.html' %}
+
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
