@@ -1,5 +1,5 @@
 from django.contrib import admin
-
+from import_export import resources
 from .models import ObselescenceData, OEMProvider, SMEFocal, Femast
 
 
@@ -7,6 +7,12 @@ from .models import ObselescenceData, OEMProvider, SMEFocal, Femast
 class ObsolescenceDataAdmin(admin.ModelAdmin):
     list_display = ('tag',)
     list_filter = ('tag',)
+    
+    
+class ObselescenceResource(resources.ModelResource):
+
+    class Meta:
+        model = ObselescenceData
     
 
 @admin.register(OEMProvider)

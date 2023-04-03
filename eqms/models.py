@@ -94,6 +94,7 @@ class ObselescenceData(models.Model):
     description = models.TextField()
     rating = models.CharField(max_length=255, blank=True, null=True)
     manufacturer = models.ManyToManyField('OEMProvider')
+    serial_number = models.CharField(max_length=255)
     no_of_oem_sources = models.IntegerField()
     stock_available_vs_consumption_rate = models.CharField(max_length=55, choices=STOCK_CHOICES)
     year_of_manufacture = models.DateField()
