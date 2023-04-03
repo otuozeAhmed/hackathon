@@ -181,7 +181,7 @@ d.addEventListener("DOMContentLoaded", function(event) {
         var chart = new Chartist.Bar('.ct-chart-ranking', {
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
             series: [
-              [1, 5, 2, 5, 4, 3],
+              [1, 3, 5, 6, 9, 3],
               [2, 3, 4, 8, 1, 2],
             ]
           }, {

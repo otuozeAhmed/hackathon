@@ -18,3 +18,13 @@ def oem_details(request):
 
 def equipment_data(request):
     return render(request, "equipment_data.html")
+
+def summary(request):
+    data = [1, 2, 3, 4, 5]
+    context = {
+        "val": data
+    }
+    return render(request, "summary.html", context)
+
+def units(request):
+    return render(request, "units.html")

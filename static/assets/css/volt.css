@@ -15,6 +15,7 @@
 
 **/
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;1,500&display=swap');
 /*!
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -81,8 +82,8 @@
     --bs-behance: #0057ff;
     --bs-reddit: #E84422;
     --bs-github: #222222;
-    --bs-font-sans-serif: "Nunito Sans", sans-serif;
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-font-sans-serif: 'JetBrains Mono', monospace;
+    --bs-font-monospace: 'JetBrains Mono', monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
@@ -93,18 +94,18 @@
 }
 
 .padd-page {
-    padding-top: 150px;
-    padding-bottom: 70px;
+    padding-top: 186px;
+    padding-bottom: 150px;
 }
 
 .padd-page-2 {
-    padding-top: 100px;
+    padding-top: 40px;
     padding-bottom: 70px;
 }
 
 .padd-page-3 {
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 
 /* .padd-area {
@@ -113,7 +114,7 @@
 
 .area-transform {
     font-weight: bolder !important;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .image-size {
@@ -155,8 +156,29 @@
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
- 
 }
+
+#card-transform-id .card-transform2:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #fff;
+}
+
+.card-area-transform:hover {
+    background-color: #262B40 !important;
+    color: #fff !important;
+}
+
+.card-area-transform h3:hover {
+    /* background-color: #262B40 !important; */
+    color: #fff !important;
+}
+
 
 .pad-value {
 
@@ -180,10 +202,18 @@
     font-size: 16px !important;
 }
 
+.oem-header-size {
+    font-size: 21px !important;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-
-
-
+#button-style:hover {
+    background-color: #1284C3;
+    font-size: 18px;
+}
 
 
 
@@ -24356,7 +24386,7 @@ pre[class*="language-"] {
     color: black;
     background: none;
     text-shadow: 0 1px white;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1em;
     text-align: left;
     white-space: pre;
@@ -34739,7 +34769,7 @@ label {
 
 .breadcrumb-item + .breadcrumb-item:before {
     content: "\f101";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 900;
     color: #66799e;
 }
@@ -35777,7 +35807,7 @@ label {
 
 .carousel-control-prev-icon::before {
     content: '\f060';
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     font-size: 2rem;
 }
 
@@ -35786,7 +35816,7 @@ label {
 }
 
 .carousel-control-next-icon:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     content: "\f061";
     font-size: 2rem;
 }
@@ -35825,7 +35855,7 @@ label {
  */
 .counter-alternate::after {
     content: '\f067';
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     position: absolute;
     font-size: 2.25rem;
     color: #262B40;
@@ -35896,7 +35926,7 @@ label {
 
 .rating-star label:before {
     content: "\f005";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 900;
     transition: all .2s ease;
     font-size: 1.0625rem;
@@ -42663,7 +42693,7 @@ label {
  */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
 }
 
@@ -43934,7 +43964,7 @@ article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
 }
 
 .fc .fc-col-header-cell-cushion::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 900;
     font-size: 0.875rem;
     content: "\f783";
@@ -43950,7 +43980,7 @@ article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
 }
 
 .fc-daygrid-event::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 900;
     content: "\f274";
     color: #ffffff;

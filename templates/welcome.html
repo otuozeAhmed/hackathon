@@ -1,6 +1,6 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Lock {% endblock %} 
+{% block title %}  {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -27,9 +27,10 @@
                         
                         <img class="card-transform" src="/static/assets/img/cover-3.jpg" />
                         <img class="card-transform" src="/static/assets/img/cover-6.jpg" />
+                        
                     
                     </div>
-                    <button class="btn btn-primary" type="button">Click here to continue...</button>
+                    <button id="button-style" class="btn btn-primary text-light" type="button"><a href="{% url 'home' %}">Click here to continue...</a></button>
                 </div>
             </div>
         </section>
